@@ -1,0 +1,84 @@
+.custom-notification {
+  border-bottom: 1px solid #e6e9eb !important;
+  display: flex;
+  padding: 12px !important;
+  font-family: Lato !important;
+}
+
+.custom-notification * {
+  font-family: Lato !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+}
+
+.custom-notification.unseen,
+.custom-notification:hover {
+  background: rgba(88, 110, 224, 0.06) !important;
+}
+
+.custom-notification:last-child {
+  border-bottom: 0 !important;
+}
+
+.custom-notification .container {
+  margin-left: 12px;
+  display: flex;
+}
+
+.custom-notification .container > div:not(:empty) {
+  margin: 8px 8px 8px 0;
+}
+
+.custom-notification .unread-state {
+  width: 20px;
+  margin-top: 12px;
+  flex-shrink: 0;
+}
+
+.custom-notification .unread-state svg {
+  height: 16px;
+  fill: #586ee0 !important;
+}
+
+.custom-notification .container .title b {
+  font-weight: bold;
+}
+
+.custom-notification .container .sender {
+  width: 30px;
+  flex-shrink: 0;
+  margin-right: 12px !important;
+}
+
+.custom-notification .container .sender img {
+  border-radius: 50%;
+  height: 30px;
+}
+
+.custom-notification .container .timestamp {
+  color: #939da8;
+  font-size: 13px !important;
+}
+
+.custom-notification .container .content:not(:empty) {
+  margin-top: 15px;
+  color: #545465 !important;
+}
+
+.custom-notification .container .actions button {
+  margin-top: 15px;
+  color: rgba(88, 110, 224, 1);
+}
+
+div[class$="Footer"] {
+  display: none;
+}
+
+div[class$="Header"] p {
+  text-transform: none;
+}
+
+div[class$="Header"] button {
+  color: #586ee0;
+  text-transform: none;
+}
